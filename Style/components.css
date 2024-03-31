@@ -1,0 +1,29 @@
+body{
+    background-color: brown;
+}
+#button_container{
+    position: relative;
+    background-color: blueviolet;
+    height: 60px;
+    width: 9vh;
+}
+#theme_button{
+    position: relative;
+    top: 6px;
+    height: 6vh;
+    max-height: 30px;
+    min-height: 25px;
+    width: 5vw;
+    max-width: 65px;
+    min-width: 55px;
+    background-color: green;
+    border-radius: 35px;
+}
+.theme{
+    position: static;
+    top: 0px;
+    height:98% ;
+    width: 50% ;
+}
+
+
