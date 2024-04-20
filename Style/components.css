@@ -1,5 +1,7 @@
 body{
     background-color: brown;
+    height: 100%;
+    width: 100%;
 }
 
 #theme_button{
@@ -16,16 +18,50 @@ body{
 }
 .theme{
     position: absolute;
-    left: -2px;
-    top: 0.2px;
-    height:99% ;
-    width: 52% ;
+    left: -1.6px;
+    top: 1.2px;
+    height:90% ;
+    width: 53% ;
    z-index: 2;
 }
 #dark{
-    top: 0.1px;
+   
+    
     z-index: 0;
-    height:100% ;
+    
 }
 
-
+#searchbar{
+    background-color: aliceblue;
+    border-radius: 2vh;
+    margin-top: 1vh;
+    height: 5vh;
+    width: 10%;
+    text-align: center;
+    min-width: 200px;
+    min-height: 30px;
+    outline: none;
+    border: none;
+}
+#searchback{ 
+    top: 6vh;
+    z-index: 0;
+    position: absolute;
+    min-width: 200px;
+    min-height: 30px;
+    margin-top: 2vh;
+    border-radius: 2vh;
+    background-color: black;
+    height: 5.5vh;
+    width: 39vh;
+    min-width: 200px;
+    min-height: 30px;
+    outline: none;
+    border: none;
+}
+input[value="Search..."]{
+    position: relative;
+    top: 0.9vh;
+    font-size: 22px;
+    color: rgba(44, 66, 85, 0.452);
+}

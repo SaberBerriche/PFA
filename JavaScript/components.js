@@ -4,7 +4,7 @@
     var isLightVisible= true;
    
     console.log(leftvalue);
-    leftvalue = leftvalue-widthvalue+1;
+    leftvalue = leftvalue-widthvalue+1.6;
     
     
 
@@ -30,10 +30,10 @@
                 backgroundColor: 'black'
               },500);
           $('#dark').animate({
-            'left': -1
+            'left': -1.6
           }, 500, );
           $('#light').animate({
-            'left': -1,
+            'left': -1.6,
             'opacity': 'show'
           }, 500);
         }
@@ -41,3 +41,15 @@
         // Toggle the state
         isLightVisible = !isLightVisible;
       });
+
+
+
+
+
+      $("#searchbar").focus( function(){
+        $("#searchbar").val("");
+    })
+    
+    $("#searchbar").blur( function(){
+        $("#searchbar").val("Search...");
+    })
