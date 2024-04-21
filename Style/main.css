@@ -12,12 +12,15 @@ body{
     height: 11vh;
     background-color: #527799;
     min-height: 50px;
+    max-height: 70px;
 }
 
 #logo{ 
-    margin-top: -2vh;
-    height: 140%;
-    min-height: 30px;
+    
+    height: 9vh;
+    min-height: 70px;
+    max-height: 80px;
+  
 }
 #search_contain{
     
@@ -57,14 +60,26 @@ input[value="Search..."]{
     min-height: 35px;
     height: 8vh;
 }
+#calend_icon {
+   
+    height: 8vh; /* Set an initial height */
+   
+  }
 #sup_icon{
     height: 7.4vh;
 }
 
 #cal_box{
-   margin-left: 250px;
+   
+   margin-left: 15vw;
+}
+#cal_text{
+   
 }
 #sup_box{
+    padding: 5px;
+   
+   
     margin-left: -40px;
 }
 .flex_box{
@@ -81,10 +96,13 @@ input[value="Search..."]{
     font-size: 20px;
     font-weight: bold;
 }
-
+#button_container{
+    margin-right: 1.5vw;
+   margin-left: auto;
+}
 
 #theme_button{
-    align-self: flex-end;
+    
     position: relative;
     margin-left: auto;
     height: 7vh;
@@ -165,7 +183,7 @@ width: 17vw;
     height: 100vh;
     width: 25vw;
     min-width: 300px;
-    border: solid black;
+   /* border: solid black;*/
 }
 .title{
    
@@ -180,13 +198,14 @@ width: 17vw;
 }
 
 .rec_box{
+    margin-left: 5px;
     display: flex;
     flex-direction: column;
     gap: 1vh;
     height: 50vh;
     width: 25vw;
     min-width: 300px;
-    border: solid yellow;
+   /* border: solid yellow;*/
 }
 
 #recC1,#recE1{
@@ -197,7 +216,7 @@ width: 17vw;
 #feed_sect{
     z-index: -1;
     top: 12vh;
-    background-color: rgb(236, 163, 163);
+   /* background-color: rgb(236, 163, 163);*/
     left: 26vw;
     margin-left: 30px;
     position: relative;
@@ -216,26 +235,35 @@ width: 17vw;
     background-color: rgb(131, 148, 163);
     border-radius: 15px;
 }
-#club_av{
-    height: 35px;
-    width: 35px;
+.club_av{
+    height: 65px;
+    width: 65px;
+ 
 }
 
-#post_head{
+.post_head{
     display: flex;
     flex-direction: row;
     margin: 1vh;
 }
-
-#post_head span{
-    margin: 1.1vh;
-    font-size: 18px;
+.head_text{
+margin-top: 1vh;
+}
+ .c_name{
+    
+    margin-left: 1.2vh;
+    font-size: 25px;
+}
+.post_date{
+  
+    margin-left: 1.2vh;
+    font-size: 10px;
 }
 
-#post_content{
+.post_content{
     margin: 1.7vh;
 }
 
-#post_content img{
+.post_content img{
     height: 25vh;
 }

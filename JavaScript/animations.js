@@ -43,3 +43,41 @@ $('.theme').click(function() {
     // Toggle the state
     isLightVisible = !isLightVisible;
   });
+
+
+  //calendar animation
+  $("#cal_box").hover(
+    function() {
+      $("#calend_icon").animate({
+        'padding': '10px',
+        'background-color' : 'rgb(131,148,163)'
+      });
+      
+    },
+    function() {
+      $("#calend_icon").stop();
+      $("#calend_icon").animate({
+        'padding': '0px',
+        'background-color' : 'rgb(82,119,153)'
+      });
+    }
+  );
+    // support anim
+    $("#sup_box").hover(
+      function() {
+        $("#sup_icon").animate({
+          'padding': '10px',
+          'background-color' : 'rgb(131,148,163)'
+        });
+        
+      },
+      function() {
+        $("#sup_icon").stop();
+        $("#sup_icon").animate({
+          'padding': '0px',
+          'background-color' : 'rgb(82,119,153)'
+        });
+      }
+    );
+ 
+  

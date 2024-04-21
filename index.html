@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uniclub</title>
+    <link rel="icon" type="image/svg+xml"  href="media/Logo.svg">
     <link rel="stylesheet" href="Style/main.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="JavaScript/jquery-ui-1.13.2.custom/jquery-ui-1.13.2.custom/jquery-ui.js"></script>
@@ -16,7 +17,9 @@
  <div id="nav_contain">
     <div id="navbar">
         <div >
-         <img src="media/logo.svg" alt="" id="logo">
+        <a href="">
+            <img src="media/logo.svg" alt="" id="logo">
+        </a>
         </div>
 
          <div id="search_contain" >
@@ -27,6 +30,7 @@
         <div id="cal_box" class="flex_box">
             <a href="">
             <img class="icons" id="calend_icon" src="media/calendar_icon.svg" alt="">
+            
             </a>    
         </div>
 
@@ -81,10 +85,10 @@
         <span class="title_text"> Clubs</span>
         </div>
         
-            <span id="recC1" class="recs">Club 1</span>
-            <span id="recC2" class="recs"> Club 2</span>
-            <span id="recC3" class="recs"> Club 3</span>
-            <span id="recC3" class="recs"> Club 4</span>
+           <a href=""> <span id="recC1" class="recs">Club 1</span></a>
+           <a href=""> <span id="recC2" class="recs"> Club 2</span></a>
+           <a href=""> <span id="recC3" class="recs"> Club 3</span></a>
+           <a href=""> <span id="recC3" class="recs"> Club 4</span></a>
         
     </div>
 
@@ -92,10 +96,10 @@
         <div class="title">
             <span class="title_text"> Events</span>
         </div>
-            <span id="recE1" class="recs"> Event 1</span>
-            <span id="recE2" class="recs"> Event 2</span>
-            <span id="recE3" class="recs"> Event 3</span>
-            <span id="recE3" class="recs"> Event 4</span>  
+            <a href=""><span id="recE1" class="recs"> Event 1</span></a>
+            <a href=""><span id="recE2" class="recs"> Event 2</span></a>
+           <a href=""> <span id="recE3" class="recs"> Event 3</span></a>
+            <a href=""><span id="recE3" class="recs"> Event 4</span>  </a>
     </div>
  </div>
 
@@ -103,11 +107,15 @@
  <div id="feed_sect">
 
     <div class="p_container">
-        <div id="post_head">
-            <img id="club_av" src="media/Default_avatar.svg" alt="">
-            <span>Club Name</span>
+        <div class="post_head">
+            <img class="club_av" src="media/Default_avatar.svg" alt="">
+            <div class="head_text">
+                <span class="c_name">Club Name</span> <br> 
+                <span class="post_date">DD/MM/YYYY</span>
+            </div>
+
         </div>
-        <div id="post_content">
+        <div class="post_content">
             <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
@@ -126,11 +134,15 @@
     </div>
 
     <div class="p_container">
-        <div id="post_head">
-            <img id="club_av" src="media/Default_avatar.svg" alt="">
-            <span>Club Name</span>
+        <div class="post_head">
+            <img class="club_av" src="media/Default_avatar.svg" alt="">
+            <div class="head_text">
+                <span class="c_name">Club Name</span> <br> 
+                <span class="post_date">DD/MM/YYYY</span>
+            </div>
+
         </div>
-        <div id="post_content">
+        <div class="post_content">
             <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
