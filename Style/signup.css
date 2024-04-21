@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  overflow-x: hidden;
+}
+#all {
+  background-color: #527799;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 80vw;
+  align-items: center;
+  margin-left: 10vw;
+  gap: 5vh;
+}
+
+.txt1 {
+  text-align: center;
+  margin-top: 3vw;
+  color: #fff;
+}
+
+.txt2 {
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#avatar {
+  height: 15vh;
+  width: auto;
+}
+
+#bio {
+  float: right;
+}
+
+#sec2 {
+  display: flex;
+}
+
+.sec2-1,
+.sec2-2 {
+  display: flex;
+  flex-direction: column;
+}
