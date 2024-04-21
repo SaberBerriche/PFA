@@ -1,23 +1,35 @@
-$("#searchbar").focus( function(){
-    $("#searchbar").val("");
-    $("#search_icon").hide();
-})
+$("#searchbar").focus(function () {
+  $("#searchbar").val("");
+  $("#search_icon").hide();
+});
 
-$("#searchbar").blur( function(){
-    $("#searchbar").val("Search...");
-    $("#search_icon").show();
-})
+$("#searchbar").blur(function () {
+  $("#searchbar").val("Search...");
+  $("#search_icon").show();
+});
 
+$("#butt_log").on("click", function () {
+  $("#popup").css("display", "block");
+});
 
+$(document).on("click", function (event) {
+  if (
+    !$(event.target).closest("#popup-content").length &&
+    !$(event.target).is("#butt_log")
+  ) {
+    $("#popup").css("display", "none");
+  }
+});
 
-$("#butt_log").on("click", function() {
-    $("#popup").css("display", "block");
-    
-  });
-  
-$(document).on("click", function(event) {
-    if (!$(event.target).closest("#popup-content").length && !$(event.target).is("#butt_log")) {
-      $("#popup").css("display", "none");
-      
-    }
+$("#sup_icon").on("click", function () {
+  $("#popup2").css("display", "block");
+});
+
+$(document).on("click", function (event) {
+  if (
+    !$(event.target).closest("#support_content").length &&
+    !$(event.target).is("#sup_icon")
+  ) {
+    $("#popup2").css("display", "none");
+  }
 });

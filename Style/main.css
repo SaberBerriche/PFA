@@ -1,131 +1,122 @@
-body{
-    margin: 0;
-    overflow-x: hidden;
+body {
+  margin: 0;
+  overflow-x: hidden;
 }
 
 /*nav bar style*/
-#navbar{
-    position: fixed;
-    width: 100vw;
-    display: flex;
-    gap: 6.5vw;
-    height: 11vh;
-    background-color: #527799;
-    min-height: 50px;
-    max-height: 70px;
+#navbar {
+  position: fixed;
+  width: 100vw;
+  display: flex;
+  gap: 6.5vw;
+  height: 11vh;
+  background-color: #527799;
+  min-height: 50px;
+  max-height: 70px;
 }
 
-#logo{ 
-    
-    height: 9vh;
-    min-height: 70px;
-    max-height: 80px;
-  
+#logo {
+  height: 9vh;
+  min-height: 70px;
+  max-height: 80px;
 }
-#search_contain{
-    
-    width: 19%;
-
+#search_contain {
+  width: 19%;
 }
-#searchbar{
-    background-color: aliceblue;
-    border-radius: 2vh;
-    margin-top: 1vh;
-    height: 60%;
-    width: 95%;
-    text-align: center;
-    min-width: 230px;
-    min-height: 30px;
-    outline: none;
-    border: none;
+#searchbar {
+  background-color: aliceblue;
+  border-radius: 2vh;
+  margin-top: 1vh;
+  height: 60%;
+  width: 95%;
+  text-align: center;
+  min-width: 230px;
+  min-height: 30px;
+  outline: none;
+  border: none;
 }
-#search_icon{
-    position:absolute;
-    height: 4.5vh;
-    z-index: 2;
-    margin-top: 3vh;
-    margin-left: 1.8vw;
+#search_icon {
+  position: absolute;
+  height: 4.5vh;
+  z-index: 2;
+  margin-top: 3vh;
+  margin-left: 1.8vw;
 }
 
-
-
-input[value="Search..."]{
-    position: relative;
-    top: 0.9vh;
-    font-size: 22px;
-    color: rgba(44, 66, 85, 0.452);
+input[value="Search..."] {
+  position: relative;
+  top: 0.9vh;
+  font-size: 22px;
+  color: rgba(44, 66, 85, 0.452);
 }
 
-.icons{
-    min-height: 35px;
-    height: 8vh;
+.icons {
+  min-height: 35px;
+  height: 8vh;
 }
 #calend_icon {
-   
-    height: 8vh; /* Set an initial height */
-   
-  }
-#sup_icon{
-    height: 7.4vh;
+  height: 8vh; /* Set an initial height */
+}
+#sup_icon {
+  height: 7.4vh;
 }
 
-#cal_box{
-   
-   margin-left: 15vw;
-}
-#cal_text{
-   
-}
-#sup_box{
-    padding: 5px;
-   
-   
-    margin-left: -40px;
-}
-.flex_box{
-    align-self: center;
-}
-#butt_log{
-    margin-left: -20px;
-    height: 7vh;
-    width: 25vh;
-    border-radius: 10px;
-    outline: none;
-    border: none;
-    color: rgb(198,204,218);
-    font-size: 20px;
-    font-weight: bold;
-}
-#button_container{
-    margin-right: 1.5vw;
-   margin-left: auto;
+#cal_box {
+  margin-left: 15vw;
 }
 
-#theme_button{
-    
-    position: relative;
-    margin-left: auto;
-    height: 7vh;
-    width: 7vw;
-    max-width: 90px;
-    max-height: 45px;
-    background-color: rgb(0, 0, 0);
-    border-radius: 35px;
+#sup_box {
+  padding: 5px;
+  margin-left: -40px;
 }
-.theme{
-    position: absolute;
-    left: -1.6px;
-    top: 1.2px;
-    height:90% ;
-    width: 53% ;
-    z-index: 2;
+
+.flex_box {
+  align-self: center;
 }
-#dark{
-    z-index: 0;
+
+#butt_log {
+  margin-left: -20px;
+  height: 7vh;
+  width: 25vh;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  color: rgb(198, 204, 218);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#button_container {
+  margin-right: 1.5vw;
+  margin-left: auto;
+}
+
+#theme_button {
+  position: relative;
+  margin-left: auto;
+  height: 7vh;
+  width: 7vw;
+  max-width: 90px;
+  max-height: 45px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 35px;
+}
+.theme {
+  position: absolute;
+  left: -1.6px;
+  top: 1.2px;
+  height: 90%;
+  width: 53%;
+  z-index: 2;
+}
+
+#dark {
+  z-index: 0;
 }
 
 /*Popup Styles*/
-#popup {
+#popup,
+#popup2 {
   text-align: center;
   display: none;
   position: fixed;
@@ -138,132 +129,170 @@ input[value="Search..."]{
 }
 
 #popup-content {
-    width: 30vw;
-    font-family: 'Inter', sans-serif;
-  color:white ;
+  width: 30vw;
+  font-family: "Inter", sans-serif;
+  color: white;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: rgba(82, 119, 153, 1);
   padding: 20px;
+  border-radius: 20px;
 }
 
-
-
-#log_form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-#logo_form{
-    margin-top: -20px;
-    height: 150px;
-    margin-left: 15px;
-}
-
-.log_input{
-height: 3.5vh;
-width: 17vw;
+#support_content {
+  width: 30vw;
+  font-family: "Inter", sans-serif;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(82, 119, 153, 1);
+  padding: 20px;
+  border-radius: 20px;
 }
 
-#log_butt{
-    margin-top: 5px;
-    height: 3.5vh;
-    width: 17.7vw;
-   color: white;
-   background-color: #4C6984;
-   border: none;
+#log_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#logo_form {
+  margin-top: -20px;
+  height: 150px;
+  margin-left: 15px;
+}
+
+.log_input {
+  height: 3.5vh;
+  width: 17vw;
+}
+
+#log_butt {
+  margin-top: 5px;
+  height: 3.5vh;
+  width: 17.7vw;
+  color: white;
+  background-color: #4c6984;
+  border: none;
+}
+#butt_log:hover {
+  color: rgb(218, 218, 218);
+  background-color: #143452;
 }
 /*recommendation section styles*/
 
-#rec_sect{
-    margin-top: 11vh;
-    position: fixed;
-    height: 100vh;
-    width: 25vw;
-    min-width: 300px;
-   /* border: solid black;*/
+#rec_sect {
+  margin-top: 11vh;
+  position: fixed;
+  height: 100vh;
+  width: 25vw;
+  min-width: 300px;
+  /* border: solid black;*/
 }
-.title{
-   
-    align-self: center;
-    text-align: center;
-    height: 2.7vh;
-    min-height: 25px;
-    width: 50%;
-    color: white;
-    font-size: 1.4rem;
-    background-color: rgb(247,214,142);
-}
-
-.rec_box{
-    margin-left: 5px;
-    display: flex;
-    flex-direction: column;
-    gap: 1vh;
-    height: 50vh;
-    width: 25vw;
-    min-width: 300px;
-   /* border: solid yellow;*/
+.title {
+  align-self: center;
+  text-align: center;
+  height: 2.7vh;
+  min-height: 25px;
+  width: 50%;
+  color: white;
+  font-size: 1.4rem;
+  background-color: rgb(247, 214, 142);
 }
 
-#recC1,#recE1{
-    margin-top: 35px;
+.rec_box {
+  margin-left: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  height: 50vh;
+  width: 25vw;
+  min-width: 300px;
+  /* border: solid yellow;*/
+}
+
+#recC1,
+#recE1 {
+  margin-top: 35px;
 }
 
 /*Posts Sections */
-#feed_sect{
-    z-index: -1;
-    top: 12vh;
-   /* background-color: rgb(236, 163, 163);*/
-    left: 26vw;
-    margin-left: 30px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 2vh;
+#feed_sect {
+  z-index: -1;
+  top: 12vh;
+  /* background-color: rgb(236, 163, 163);*/
+  left: 26vw;
+  margin-left: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
 }
-@media screen and (max-width: 1080px){
-    #feed_sect{
-        left: 300px;
-    }
-} 
-.p_container{
-    width: 50vw;
-    min-width: 600px;
-    background-color: rgb(131, 148, 163);
-    border-radius: 15px;
+@media screen and (max-width: 1080px) {
+  #feed_sect {
+    left: 300px;
+  }
 }
-.club_av{
-    height: 65px;
-    width: 65px;
- 
+.p_container {
+  width: 50vw;
+  min-width: 600px;
+  background-color: rgb(131, 148, 163);
+  border-radius: 15px;
 }
-
-.post_head{
-    display: flex;
-    flex-direction: row;
-    margin: 1vh;
-}
-.head_text{
-margin-top: 1vh;
-}
- .c_name{
-    
-    margin-left: 1.2vh;
-    font-size: 25px;
-}
-.post_date{
-  
-    margin-left: 1.2vh;
-    font-size: 10px;
+.club_av {
+  height: 65px;
+  width: 65px;
 }
 
-.post_content{
-    margin: 1.7vh;
+.post_head {
+  display: flex;
+  flex-direction: row;
+  margin: 1vh;
+}
+.head_text {
+  margin-top: 1vh;
+}
+.c_name {
+  margin-left: 1.2vh;
+  font-size: 25px;
+}
+.post_date {
+  margin-left: 1.2vh;
+  font-size: 10px;
 }
 
-.post_content img{
-    height: 25vh;
+.post_content {
+  margin: 1.7vh;
 }
+
+.post_content img {
+  height: 25vh;
+}
+
+/* contact support related */
+#socials,
+#socials2 {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  height: 20%;
+  gap: 10%;
+}
+#popup2-container {
+  display: flex;
+  flex-direction: vertical;
+  gap: 5%;
+}
+.socials-txt {
+  margin-right: 40px;
+  margin-top: 10%;
+}
+.socials2-txt,
+.socials-txt {
+  font-size: 12px;
+  float: right;
+}
+/* end of contact support related */

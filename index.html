@@ -1,172 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Uniclub</title>
-    <link rel="icon" type="image/svg+xml"  href="media/Logo.svg">
-    <link rel="stylesheet" href="Style/main.css">
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/svg+xml" href="media/Logo.svg" />
+    <link rel="stylesheet" href="Style/main.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
     <script src="JavaScript/jquery-ui-1.13.2.custom/jquery-ui-1.13.2.custom/jquery-ui.js"></script>
+  </head>
 
-</head>
-
-<body>
-<!-- Navbar-->
- <div id="nav_contain">
-    <div id="navbar">
-        <div >
-        <a href="">
-            <img src="media/logo.svg" alt="" id="logo">
-        </a>
+  <body>
+    <!-- Navbar-->
+    <div id="nav_contain">
+      <div id="navbar">
+        <div>
+          <a href="">
+            <img src="media/logo.svg" alt="" id="logo" />
+          </a>
         </div>
 
-         <div id="search_contain" >
-            <img src="media/search_icon3.svg" alt="" id="search_icon">
-            <input  id="searchbar" type="text" value="Search...">
+        <div id="search_contain">
+          <img src="media/search_icon3.svg" alt="" id="search_icon" />
+          <input id="searchbar" type="text" value="Search..." />
         </div>
 
         <div id="cal_box" class="flex_box">
-            <a href="">
-            <img class="icons" id="calend_icon" src="media/calendar_icon.svg" alt="">
-            
-            </a>    
+          <a href="">
+            <img
+              class="icons"
+              id="calend_icon"
+              src="media/calendar_icon.svg"
+              alt=""
+            />
+          </a>
         </div>
 
         <div id="sup_box" class="flex_box">
-            <a href="">
-            <img class="icons" id="sup_icon" src="media/support_icon.svg" alt="">
-            </a>
+          <img
+            class="icons"
+            id="sup_icon"
+            src="media/support_icon.svg"
+            alt=""
+          />
         </div>
 
         <div id="log_box" class="flex_box">
-            <button id="butt_log">LOGIN</button>
+          <button id="butt_log">LOGIN</button>
         </div>
 
         <div id="button_container" class="flex_box">
-            <div id="theme_button">
-                <div id="animContain">
-                  <img class="theme" id="light" src="media/light theme.svg" alt="">    
-                  <img class="theme" id="dark" src="media/dark theme.svg" alt="">    
-                </div>                                         
+          <div id="theme_button">
+            <div id="animContain">
+              <img
+                class="theme"
+                id="light"
+                src="media/light theme.svg"
+                alt=""
+              />
+              <img class="theme" id="dark" src="media/dark theme.svg" alt="" />
             </div>
+          </div>
         </div>
-        
+      </div>
     </div>
- </div>
 
- <!-- Login Popup-->
- <div id="popup">
-    <div id="popup-content">
-        <h2>Welcome To <br> UniClub</h2>
-        <img id="logo_form" src="media/Logo.svg" alt="">
+    <!-- Login Popup-->
+    <div id="popup">
+      <div id="popup-content">
+        <h2>
+          Welcome To <br />
+          UniClub
+        </h2>
+        <img id="logo_form" src="media/Logo.svg" alt="" />
         <form action="" id="log_form">
-             
-                <span>Email</span>   
-                <input type="text" class="log_input"> 
-            
-            
-                <span>Password</span>   
-                <input type="text" class="log_input"> 
-                <button id="log_butt"> LOGIN</button>
+          <span>Email</span>
+          <input type="text" class="log_input" />
+
+          <span>Password</span>
+          <input type="text" class="log_input" />
+          <button id="log_butt">LOGIN</button>
         </form>
         <p>Don't have an account?</p>
-        <button id="sign_butt">Sign up Here</button> <br>
-        
+        <button id="sign_butt">Sign up Here</button> <br />
       </div>
- </div>
-
- <!-- recommendation section-->
- 
-  <div id="rec_sect">
-    <div id="rec_club" class="rec_box">
-        <div class="title">
-        <span class="title_text"> Clubs</span>
-        </div>
-        
-           <a href=""> <span id="recC1" class="recs">Club 1</span></a>
-           <a href=""> <span id="recC2" class="recs"> Club 2</span></a>
-           <a href=""> <span id="recC3" class="recs"> Club 3</span></a>
-           <a href=""> <span id="recC3" class="recs"> Club 4</span></a>
-        
     </div>
 
-    <div id="rec_event" class="rec_box">
-        <div class="title">
-            <span class="title_text"> Events</span>
-        </div>
-            <a href=""><span id="recE1" class="recs"> Event 1</span></a>
-            <a href=""><span id="recE2" class="recs"> Event 2</span></a>
-           <a href=""> <span id="recE3" class="recs"> Event 3</span></a>
-            <a href=""><span id="recE3" class="recs"> Event 4</span>  </a>
-    </div>
- </div>
-
-<!-- Posts Section-->
- <div id="feed_sect">
-
-    <div class="p_container">
-        <div class="post_head">
-            <img class="club_av" src="media/Default_avatar.svg" alt="">
-            <div class="head_text">
-                <span class="c_name">Club Name</span> <br> 
-                <span class="post_date">DD/MM/YYYY</span>
+    <!-- support Popup-->
+    <div id="popup2">
+      <div id="support_content">
+        <p>
+          Need help? contact our support team and we'll respond as soon as we
+          can!
+        </p>
+        <div id="popup2-container">
+          <div id="socials">
+            <div>
+              <img class="sm" id="facebook" src="media/facebook.svg" alt="" />
+              <a href="https://www.facebook.com" target="”_blank”">
+                <p class="socials-txt">Uniclub FSM</p>
+              </a>
             </div>
+            <div>
+              <img class="sm" id="instagram" src="media/instagram.svg" alt="" />
+              <a href="https://www.instagram.com" target="”_blank”">
+                <p class="socials-txt">Uniclub FSM</p>
+              </a>
+            </div>
+            <div>
+              <img class="sm" id="linkedin" src="media/linkedin.svg" alt="" />
+              <a href="https://www.linkedin.com" target="”_blank”">
+                <p class="socials-txt">Uniclub FSM</p>
+              </a>
+            </div>
+          </div>
+          <div id="socials2">
+            <p class="socials2-txt">
+              Phone Number:<br />
+              +216 99 623 732
+            </p>
+            <p class="socials2-txt">Support Email: UniclubFSM@gmail.com</p>
+            <p class="socials2-txt">
+              Business Email:<br />Uniclub.busieness@gmail.com
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <!-- recommendation section-->
+
+    <div id="rec_sect">
+      <div id="rec_club" class="rec_box">
+        <div class="title">
+          <span class="title_text"> Clubs</span>
+        </div>
+
+        <a href=""> <span id="recC1" class="recs">Club 1</span></a>
+        <a href=""> <span id="recC2" class="recs"> Club 2</span></a>
+        <a href=""> <span id="recC3" class="recs"> Club 3</span></a>
+        <a href=""> <span id="recC3" class="recs"> Club 4</span></a>
+      </div>
+
+      <div id="rec_event" class="rec_box">
+        <div class="title">
+          <span class="title_text"> Events</span>
+        </div>
+        <a href=""><span id="recE1" class="recs"> Event 1</span></a>
+        <a href=""><span id="recE2" class="recs"> Event 2</span></a>
+        <a href=""> <span id="recE3" class="recs"> Event 3</span></a>
+        <a href=""><span id="recE3" class="recs"> Event 4</span> </a>
+      </div>
+    </div>
+
+    <!-- Posts Section-->
+    <div id="feed_sect">
+      <div class="p_container">
+        <div class="post_head">
+          <img class="club_av" src="media/Default_avatar.svg" alt="" />
+          <div class="head_text">
+            <span class="c_name">Club Name</span> <br />
+            <span class="post_date">DD/MM/YYYY</span>
+          </div>
         </div>
         <div class="post_content">
-            <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                It has survived not only five centuries, but also the leap into electronic typesetting,
-                remaining essentially unchanged.
-                It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                and more recently with desktop publishing software like Aldus PageMaker including
-                versions of Lorem Ipsum.
-
-            </p>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s
+            with the release of Letraset sheets containing Lorem Ipsum passages,
+            and more recently with desktop publishing software like Aldus
+            PageMaker including versions of Lorem Ipsum.
+          </p>
         </div>
+      </div>
 
-        
-
-    </div>
-
-    <div class="p_container">
+      <div class="p_container">
         <div class="post_head">
-            <img class="club_av" src="media/Default_avatar.svg" alt="">
-            <div class="head_text">
-                <span class="c_name">Club Name</span> <br> 
-                <span class="post_date">DD/MM/YYYY</span>
-            </div>
-
+          <img class="club_av" src="media/Default_avatar.svg" alt="" />
+          <div class="head_text">
+            <span class="c_name">Club Name</span> <br />
+            <span class="post_date">DD/MM/YYYY</span>
+          </div>
         </div>
         <div class="post_content">
-            <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                It has survived not only five centuries, but also the leap into electronic typesetting,
-                remaining essentially unchanged.
-                It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                and more recently with desktop publishing software like Aldus PageMaker including
-                versions of Lorem Ipsum.
-            </p>
-            <img src="media/dummy test images/IMG_4911.JPG" alt="">
-            <img src="media/dummy test images/IMG_4922.JPG" alt="">
-            <img src="media/dummy test images/IMG_4923.JPG" alt="">
-            <img src="media/dummy test images/IMG_5695.jpg" alt="">
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book. It has survived not
+            only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s
+            with the release of Letraset sheets containing Lorem Ipsum passages,
+            and more recently with desktop publishing software like Aldus
+            PageMaker including versions of Lorem Ipsum.
+          </p>
+          <img src="media/dummy test images/IMG_4911.JPG" alt="" />
+          <img src="media/dummy test images/IMG_4922.JPG" alt="" />
+          <img src="media/dummy test images/IMG_4923.JPG" alt="" />
+          <img src="media/dummy test images/IMG_5695.jpg" alt="" />
         </div>
-
-        
-
+      </div>
     </div>
-
- </div>
-
 
     <script src="JavaScript/animations.js"></script>
     <script src="JavaScript/main.js"></script>
-</body>
+  </body>
 </html>
