@@ -58,7 +58,7 @@ input[value="Search..."]{
 
 .icons{
     min-height: 35px;
-    height: 8vh;
+    height: 7vh;
 }
 #calend_icon {
    
@@ -71,10 +71,14 @@ input[value="Search..."]{
 
 #cal_box{
    
-   margin-left: 15vw;
+   margin-left: 9vw;
 }
 #cal_text{
    
+}
+#notif_box{
+    display: none;
+    margin-left: -40px;
 }
 #sup_box{
     padding: 5px;
@@ -125,7 +129,7 @@ input[value="Search..."]{
 }
 
 /*Popup Styles*/
-#popup {
+.popup {
   text-align: center;
   display: none;
   position: fixed;
@@ -134,10 +138,10 @@ input[value="Search..."]{
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 9999;
+  z-index: 5;
 }
-
-#popup-content {
+.pop_content{
+    align-items: center;
     width: 30vw;
     font-family: 'Inter', sans-serif;
   color:white ;
@@ -147,10 +151,187 @@ input[value="Search..."]{
   transform: translate(-50%, -50%);
   background-color: rgba(82, 119, 153, 1);
   padding: 20px;
+  min-width: 600px;
+}
+/* signup popup*/
+#sign_pop{
+   
+    display: block;
+}
+#sign_pop_content{
+    height: 75%;
 }
 
 
 
+#ava_contain{
+    cursor: pointer;
+    left: 38%;
+    position: relative;
+    
+    height: 20vh;
+    width: 24%;
+    min-width: 140px;
+    min-height: 140px;
+    max-height: 50px;
+    overflow: hidden;
+    border-radius: 70px;
+}
+#def_ava{
+    position: relative;
+    height: 100%;
+    z-index: 2;
+    
+}
+
+#add_ava{
+    display: none;
+    top: 4%;
+    left: 6%;
+    position:absolute;
+    height: 90%;
+    z-index: 3;
+    
+}
+
+#bio textarea{
+    margin-top: 2vh;
+  outline: none;
+  background-color: #84A1BB;
+  resize: none;
+  border: none;
+  color: white;
+}
+
+#bio span{
+    margin-top: 2vh;
+    position: absolute;
+    margin-left: -6%;
+   
+}
+#span_face{
+    margin-top: 2vh;
+    position: absolute;
+    margin-left: -14%;
+}
+#span_linked{
+    margin-top: 2vh;
+    position: absolute;
+    margin-left: -12.5%;
+}
+
+#social_links input{
+    height: 3.5vh;
+    margin-top: 2vh;
+    position: relative;
+    width: 39%;
+    outline: none;
+    border: none;
+    background-color: #84A1BB;
+}
+
+#cv_att{
+    margin-top: 2vh;
+    position: absolute;
+    margin-left: -20.5%;
+}
+#file_inp{
+   margin-left: 2%;
+    margin-top: 2%;
+}
+
+#next_butt{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 6%;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    border-radius: 10px;
+    border: none;
+    background-color: #84A1BB;
+    color: white;
+    width: 12%;
+    height: 5%;
+}
+
+#fin_butt{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 6%;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    border-radius: 10px;
+    border: none;
+    background-color: #84A1BB;
+    color: white;
+    width: 12%;
+    height: 5%;
+}
+#back_butt{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 6%;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    border-radius: 10px;
+    border: none;
+    background-color: #84A1BB;
+    color: white;
+    width: 12%;
+    height: 5%;
+}
+
+#part1{
+    display: none;
+}
+#part2{
+    display: block;
+}
+
+#int_contain{
+    
+    padding-left: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+}
+.interest{
+    display: flex;
+    position: relative;
+    margin: 1%;
+    padding: 0;
+    border-radius: 10px;
+    background-color: #84A1BB;
+    width: 13vw;  
+    height: 5.5vh;  
+    max-width: 170px;
+    max-height: 50px;
+}
+
+
+
+.interest img{
+    
+    margin-left: 5%;
+    margin-top: 4%;
+    height: 60%;
+    width: 20%;
+}
+.interest span{
+   
+    
+    
+    margin-top: 4%;
+    
+   
+    height: 60%;
+    width: 60%;
+}
+
+/* login popup*/
 #log_form{
     display: flex;
     flex-direction: column;

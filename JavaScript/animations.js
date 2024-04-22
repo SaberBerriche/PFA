@@ -45,39 +45,23 @@ $('.theme').click(function() {
   });
 
 
-  //calendar animation
-  $("#cal_box").hover(
+  //icons animation
+  $(".icons").hover(
     function() {
-      $("#calend_icon").animate({
+      $(this).animate({
         'padding': '10px',
         'background-color' : 'rgb(131,148,163)'
       });
       
     },
     function() {
-      $("#calend_icon").stop();
-      $("#calend_icon").animate({
+      $(this).stop();
+      $(this).animate({
         'padding': '0px',
         'background-color' : 'rgb(82,119,153)'
       });
     }
   );
-    // support anim
-    $("#sup_box").hover(
-      function() {
-        $("#sup_icon").animate({
-          'padding': '10px',
-          'background-color' : 'rgb(131,148,163)'
-        });
-        
-      },
-      function() {
-        $("#sup_icon").stop();
-        $("#sup_icon").animate({
-          'padding': '0px',
-          'background-color' : 'rgb(82,119,153)'
-        });
-      }
-    );
+   
  
   
