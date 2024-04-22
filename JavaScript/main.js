@@ -21,6 +21,7 @@ $(document).on("click", function (event) {
   }
 });
 
+// lel popup2 mta3 contact support
 $("#sup_icon").on("click", function () {
   $("#popup2").css("display", "block");
 });
@@ -33,3 +34,4 @@ $(document).on("click", function (event) {
     $("#popup2").css("display", "none");
   }
 });
+// end of :lel popup2 mta3 contact support
