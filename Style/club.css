@@ -1,0 +1,150 @@
+#all {
+  display: flex;
+  flex-direction: column;
+}
+
+#club-feed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: hidden;
+  height: 89vh;
+  width: 60vw;
+  margin-left: 20vw;
+  margin-top: 11vh;
+  background-color: #b4c7da;
+}
+
+#cover-photo {
+  width: 330px;
+  height: 190px;
+  background-position: center;
+  align-self: center;
+  background-color: #071520;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  border-radius: 15px;
+}
+
+#cover-photo img {
+  width: 320px;
+  height: 180px;
+  background-position: center;
+  align-self: center;
+  border-radius: 15px;
+  padding-left: 5px;
+  padding-top: 5px;
+  user-select: none;
+}
+
+#profile-photo {
+  width: 70px;
+  height: 70px;
+  background-position: center;
+  align-self: center;
+  margin-bottom: 50px;
+  border-radius: 50%;
+  margin-top: -12vh;
+  margin-left: -18vw;
+}
+
+#profile-photo img {
+  width: 70px;
+  height: 70px;
+  background-position: center;
+  align-self: center;
+  background-color: #071520;
+  margin-bottom: 50px;
+  border-radius: 70px;
+  padding: 5px;
+  user-select: none;
+}
+
+#name-number {
+  background-position: center;
+  align-self: center;
+  margin-top: -15vh;
+  margin-left: -6vw;
+}
+
+.c-txt1 {
+  font-size: 12px;
+  color: #000000;
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+  user-select: none;
+}
+
+#clubo-tabs {
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+}
+
+.c-txt2 {
+  font-size: 15px;
+  color: #1b1b1b;
+  margin-top: 5vh;
+  font-weight: bold;
+  user-select: none;
+}
+
+#cpart1 {
+  height: 50vh;
+  width: 40vw;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+.cp_container {
+  width: 38.5vw;
+  background-color: #8394a3;
+  border-radius: 15px;
+}
+
+#create-p {
+  width: 38.5vw;
+  height: 150px;
+  background-color: #8394a3;
+  border-radius: 15px;
+}
+
+#post-photo {
+  height: 4vh;
+  width: auto;
+  margin-right: 10px;
+  background-color: #071520;
+  border-radius: 5px;
+  padding: 3px;
+  float: right;
+}
+
+#post-input {
+  background-color: #8394a3;
+  border-radius: 2vh;
+  height: 100px;
+  width: 99%;
+  text-align: center;
+  outline: none;
+  border: none;
+}
+
+#post-butt {
+  float: right;
+  margin-right: 20px;
+  margin-bottom: 3px;
+  height: 5vh;
+  padding: 0px 20px;
+  background-color: #071520;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#post-butt:hover {
+  background-color: #0056b3;
+}

@@ -20,9 +20,11 @@ body {
   min-height: 70px;
   max-height: 80px;
 }
+
 #search_contain {
   width: 19%;
 }
+
 #searchbar {
   background-color: aliceblue;
   border-radius: 2vh;
@@ -35,6 +37,7 @@ body {
   outline: none;
   border: none;
 }
+
 #search_icon {
   position: absolute;
   height: 4.5vh;
@@ -54,9 +57,11 @@ input[value="Search..."] {
   min-height: 35px;
   height: 7vh;
 }
+
 #calend_icon {
   height: 8vh; /* Set an initial height */
 }
+
 #sup_icon {
   height: 7.4vh;
 }
@@ -64,20 +69,22 @@ input[value="Search..."] {
 #cal_box {
   margin-left: 9vw;
 }
+
 #cal_text {
 }
-#notif_box {
-  display: none;
-  margin-left: -40px;
-}
-#sup_box {
-  padding: 5px;
 
+#notif_box {
   margin-left: -40px;
 }
+
+#sup_box {
+  margin-left: -40px;
+}
+
 .flex_box {
   align-self: center;
 }
+
 #butt_log {
   margin-left: -20px;
   height: 7vh;
@@ -89,6 +96,7 @@ input[value="Search..."] {
   font-size: 20px;
   font-weight: bold;
 }
+
 #button_container {
   margin-right: 1.5vw;
   margin-left: auto;
@@ -392,7 +400,7 @@ input[value="Search..."] {
 .p_container {
   width: 50vw;
   min-width: 600px;
-  background-color: rgb(131, 148, 163);
+  background-color: #8394a3;
   border-radius: 15px;
 }
 .club_av {
@@ -434,20 +442,24 @@ input[value="Search..."] {
   height: 20%;
   gap: 10%;
 }
+
 #popup2-container {
   display: flex;
   flex-direction: vertical;
   gap: 5%;
 }
+
 .socials-txt {
   margin-right: 40px;
   margin-top: 10%;
 }
+
 .socials2-txt,
 .socials-txt {
   font-size: 12px;
   float: right;
 }
+
 #popup-content {
   width: 30vw;
   font-family: "Inter", sans-serif;
@@ -473,6 +485,7 @@ input[value="Search..."] {
   padding: 20px;
   border-radius: 20px;
 }
+
 #popup2 {
   text-align: center;
   display: none;
