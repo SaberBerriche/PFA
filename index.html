@@ -16,7 +16,7 @@
   </head>
 
   <body>
-    <!-- Navbar-->
+    <!-- -------------------------------------Navbar------------------------------------------>
     <div id="nav_contain">
       <div id="navbar">
         <div>
@@ -31,14 +31,21 @@
         </div>
 
         <div id="cal_box" class="flex_box">
-          <a href="">
-            <img
-              class="icons"
-              id="calend_icon"
-              src="media/calendar_icon.svg"
-              alt=""
-            />
-          </a>
+          <img
+            class="icons"
+            id="calend_icon"
+            src="media/calendar_icon.svg"
+            alt=""
+          />
+        </div>
+
+        <div id="notif_box" class="flex_box">
+          <img
+            class="icons"
+            id="notif_icon"
+            src="media/notification_icon3.svg"
+            alt=""
+          />
         </div>
 
         <div id="sup_box" class="flex_box">
@@ -70,9 +77,9 @@
       </div>
     </div>
 
-    <!-- Login Popup-->
-    <div id="popup">
-      <div id="popup-content">
+    <!------------------------------------Login Popup---------------------------------------->
+    <div id="log_pop" class="popup">
+      <div id="popup-content" class="pop_content">
         <h2>
           Welcome To <br />
           UniClub
@@ -91,50 +98,99 @@
       </div>
     </div>
 
-    <!-- support Popup-->
-    <div id="popup2">
-      <div id="support_content">
-        <p>
-          Need help? contact our support team and we'll respond as soon as we
-          can!
-        </p>
-        <div id="popup2-container">
-          <div id="socials">
-            <div>
-              <img class="sm" id="facebook" src="media/facebook.svg" alt="" />
-              <a href="https://www.facebook.com" target="”_blank”">
-                <p class="socials-txt">Uniclub FSM</p>
-              </a>
+    <!---------------------------------signup section--------------------------------------->
+    <div id="sign_pop" class="popup">
+      <div id="sign_pop_content" class="pop_content">
+        <form action="">
+          <div id="part1">
+            <h2>Please enter your details below</h2>
+            <div id="ava_contain">
+              <img id="def_ava" src="media/Default_avatar.svg" alt="" />
+              <img id="add_ava" src="media/plus_sign.svg" alt="" />
+              <input
+                type="file"
+                id="file_input"
+                style="display: none"
+                accept="image/*"
+              />
+            </div>
+            <div id="bio">
+              <span class="side_title">Bio</span>
+              <textarea name="" id="" cols="30" rows="5"></textarea>
+            </div>
+            <div id="social_links">
+              <span id="span_face"> Facebook </span>
+              <input type="text" class="soc_inp" id="face_inp" /> <br />
+              <span id="span_linked">LinkedIn</span>
+              <input type="text" class="soc_inp" id="linked_inp" />
             </div>
             <div>
-              <img class="sm" id="instagram" src="media/instagram.svg" alt="" />
-              <a href="https://www.instagram.com" target="”_blank”">
-                <p class="socials-txt">Uniclub FSM</p>
-              </a>
+              <span id="cv_att"> CV Attachement</span>
+              <input type="file" id="file_inp" accept="application/pdf" />
             </div>
-            <div>
-              <img class="sm" id="linkedin" src="media/linkedin.svg" alt="" />
-              <a href="https://www.linkedin.com" target="”_blank”">
-                <p class="socials-txt">Uniclub FSM</p>
-              </a>
-            </div>
+            <button id="next_butt">Next</button>
           </div>
-          <div id="socials2">
-            <p class="socials2-txt">
-              Phone Number:<br />
-              +216 99 623 732
-            </p>
-            <p class="socials2-txt">Support Email: UniclubFSM@gmail.com</p>
-            <p class="socials2-txt">
-              Business Email:<br />Uniclub.busieness@gmail.com
-            </p>
+
+          <div id="part2">
+            <h2>Choose your Interests</h2>
+            <div id="int_contain">
+              <div class="interest">
+                <img src="media/plus_sign_no_border.svg" alt="" />
+                <span>Robotics</span>
+              </div>
+              <div class="interest">
+                <img src="media/plus_sign_no_border.svg" alt="" />
+                <span>Coding</span>
+              </div>
+              <div class="interest">
+                <img src="media/plus_sign_no_border.svg" alt="" />
+                <span>Art</span>
+              </div>
+              <div class="interest">
+                <img src="media/plus_sign_no_border.svg" alt="" />
+                <span>Movies</span>
+              </div>
+              <div class="interest">
+                <img src="media/plus_sign_no_border.svg" alt="" />
+                <span>Sport</span>
+              </div>
+              <div class="interest">
+                <img src="media/plus_sign_no_border.svg" alt="" />
+                <span>Gaming</span>
+              </div>
+              <div class="interest">
+                <img src="media/plus_sign_no_border.svg" alt="" />
+                <span>Conference</span>
+              </div>
+              <div class="interest">
+                <img src="media/plus_sign_no_border.svg" alt="" />
+                <span>Soft Skills</span>
+              </div>
+              <div class="interest">
+                <img src="media/plus_sign_no_border.svg" alt="" />
+                <span>Frontend</span>
+              </div>
+              <div class="interest">
+                <img src="media/plus_sign_no_border.svg" alt="" />
+                <span>Backend</span>
+              </div>
+              <div class="interest">
+                <img src="media/plus_sign_no_border.svg" alt="" />
+                <span>Aerospace</span>
+              </div>
+              <div class="interest">
+                <img src="media/plus_sign_no_border.svg" alt="" />
+                <span>Others</span>
+              </div>
+            </div>
+            <button id="fin_butt">Finish</button>
+            <button id="back_butt">Back</button>
           </div>
-        </div>
+        </form>
       </div>
     </div>
 
-    <!-- recommendation section-->
-
+    <!------------------------------recommendation section----------------------------------->
     <div id="rec_sect">
       <div id="rec_club" class="rec_box">
         <div class="title">
@@ -158,7 +214,7 @@
       </div>
     </div>
 
-    <!-- Posts Section-->
+    <!-----------------------------------Posts Section---------------------------------------->
     <div id="feed_sect">
       <div class="p_container">
         <div class="post_head">
@@ -207,6 +263,47 @@
           <img src="media/dummy test images/IMG_4922.JPG" alt="" />
           <img src="media/dummy test images/IMG_4923.JPG" alt="" />
           <img src="media/dummy test images/IMG_5695.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+    <!----------------------------------support Popup----------------------------------------->
+    <div id="popup2">
+      <div id="support_content">
+        <p>
+          Need help? contact our support team and we'll respond as soon as we
+          can!
+        </p>
+        <div id="popup2-container">
+          <div id="socials">
+            <div>
+              <img class="sm" id="facebook" src="media/facebook.svg" alt="" />
+              <a href="https://www.facebook.com" target="”_blank”">
+                <p class="socials-txt">Uniclub FSM</p>
+              </a>
+            </div>
+            <div>
+              <img class="sm" id="instagram" src="media/instagram.svg" alt="" />
+              <a href="https://www.instagram.com" target="”_blank”">
+                <p class="socials-txt">Uniclub FSM</p>
+              </a>
+            </div>
+            <div>
+              <img class="sm" id="linkedin" src="media/linkedin.svg" alt="" />
+              <a href="https://www.linkedin.com" target="”_blank”">
+                <p class="socials-txt">Uniclub FSM</p>
+              </a>
+            </div>
+          </div>
+          <div id="socials2">
+            <p class="socials2-txt">
+              Phone Number:<br />
+              +216 99 623 732
+            </p>
+            <p class="socials2-txt">Support Email: UniclubFSM@gmail.com</p>
+            <p class="socials2-txt">
+              Business Email:<br />Uniclub.business@gmail.com
+            </p>
+          </div>
         </div>
       </div>
     </div>

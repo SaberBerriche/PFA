@@ -52,7 +52,7 @@ input[value="Search..."] {
 
 .icons {
   min-height: 35px;
-  height: 8vh;
+  height: 7vh;
 }
 #calend_icon {
   height: 8vh; /* Set an initial height */
@@ -62,18 +62,22 @@ input[value="Search..."] {
 }
 
 #cal_box {
-  margin-left: 15vw;
+  margin-left: 9vw;
 }
-
-#sup_box {
-  padding: 5px;
+#cal_text {
+}
+#notif_box {
+  display: none;
   margin-left: -40px;
 }
+#sup_box {
+  padding: 5px;
 
+  margin-left: -40px;
+}
 .flex_box {
   align-self: center;
 }
-
 #butt_log {
   margin-left: -20px;
   height: 7vh;
@@ -85,7 +89,6 @@ input[value="Search..."] {
   font-size: 20px;
   font-weight: bold;
 }
-
 #button_container {
   margin-right: 1.5vw;
   margin-left: auto;
@@ -109,14 +112,12 @@ input[value="Search..."] {
   width: 53%;
   z-index: 2;
 }
-
 #dark {
   z-index: 0;
 }
 
 /*Popup Styles*/
-#popup,
-#popup2 {
+.popup {
   text-align: center;
   display: none;
   position: fixed;
@@ -125,10 +126,10 @@ input[value="Search..."] {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 9999;
+  z-index: 5;
 }
-
-#popup-content {
+.pop_content {
+  align-items: center;
   width: 30vw;
   font-family: "Inter", sans-serif;
   color: white;
@@ -138,22 +139,174 @@ input[value="Search..."] {
   transform: translate(-50%, -50%);
   background-color: rgba(82, 119, 153, 1);
   padding: 20px;
-  border-radius: 20px;
+  min-width: 600px;
+}
+/* signup popup*/
+#sign_pop {
+  display: none;
+}
+#sign_pop_content {
+  height: 75%;
+  border-radius: 10px;
 }
 
-#support_content {
-  width: 30vw;
-  font-family: "Inter", sans-serif;
-  color: white;
+#ava_contain {
+  cursor: pointer;
+  left: 38%;
+  position: relative;
+
+  height: 20vh;
+  width: 24%;
+  min-width: 140px;
+  min-height: 140px;
+  max-height: 50px;
+  overflow: hidden;
+  border-radius: 70px;
+}
+#def_ava {
+  position: relative;
+  height: 100%;
+  z-index: 2;
+}
+
+#add_ava {
+  display: none;
+  top: 4%;
+  left: 6%;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(82, 119, 153, 1);
-  padding: 20px;
-  border-radius: 20px;
+  height: 90%;
+  z-index: 3;
 }
 
+#bio textarea {
+  margin-top: 2vh;
+  outline: none;
+  background-color: #84a1bb;
+  resize: none;
+  border: none;
+  color: white;
+}
+
+#bio span {
+  margin-top: 2vh;
+  position: absolute;
+  margin-left: -6%;
+}
+#span_face {
+  margin-top: 2vh;
+  position: absolute;
+  margin-left: -14%;
+}
+#span_linked {
+  margin-top: 2vh;
+  position: absolute;
+  margin-left: -12.5%;
+}
+
+#social_links input {
+  height: 3.5vh;
+  margin-top: 2vh;
+  position: relative;
+  width: 39%;
+  outline: none;
+  border: none;
+  background-color: #84a1bb;
+}
+
+#cv_att {
+  margin-top: 2vh;
+  position: absolute;
+  margin-left: -20.5%;
+}
+#file_inp {
+  margin-left: 2%;
+  margin-top: 2%;
+}
+
+#next_butt {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 6%;
+  margin-top: 2%;
+  margin-bottom: 4%;
+  border-radius: 10px;
+  border: none;
+  background-color: #84a1bb;
+  color: white;
+  width: 12%;
+  height: 5%;
+}
+
+#fin_butt {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 6%;
+  margin-top: 2%;
+  margin-bottom: 4%;
+  border-radius: 10px;
+  border: none;
+  background-color: #84a1bb;
+  color: white;
+  width: 12%;
+  height: 5%;
+}
+#back_butt {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-left: 6%;
+  margin-top: 2%;
+  margin-bottom: 4%;
+  border-radius: 10px;
+  border: none;
+  background-color: #84a1bb;
+  color: white;
+  width: 12%;
+  height: 5%;
+}
+
+#part1 {
+  display: block;
+}
+#part2 {
+  display: none;
+}
+
+#int_contain {
+  padding-left: 3%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+}
+.interest {
+  display: flex;
+  position: relative;
+  margin: 1%;
+  padding: 0;
+  border-radius: 10px;
+  background-color: #84a1bb;
+  width: 13vw;
+  height: 5.5vh;
+  max-width: 170px;
+  max-height: 50px;
+}
+
+.interest img {
+  margin-left: 5%;
+  margin-top: 4%;
+  height: 60%;
+  width: 20%;
+}
+.interest span {
+  margin-top: 4%;
+
+  height: 60%;
+  width: 60%;
+}
+
+/* login popup*/
 #log_form {
   display: flex;
   flex-direction: column;
@@ -294,5 +447,41 @@ input[value="Search..."] {
 .socials-txt {
   font-size: 12px;
   float: right;
+}
+#popup-content {
+  width: 30vw;
+  font-family: "Inter", sans-serif;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(82, 119, 153, 1);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+#support_content {
+  width: 30vw;
+  font-family: "Inter", sans-serif;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(82, 119, 153, 1);
+  padding: 20px;
+  border-radius: 20px;
+}
+#popup2 {
+  text-align: center;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5;
 }
 /* end of contact support related */
