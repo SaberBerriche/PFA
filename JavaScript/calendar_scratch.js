@@ -7,9 +7,8 @@ console.log(today.toDateString());
 
 
 
-FirstDay = new Date(currentYear, currentMonth+3, 1).getDay();
-
-LastDay = new Date(currentYear, currentMonth + 4 , 0).getDate();
+FirstDay = new Date(currentYear, currentMonth, 1).getDay();
+LastDay = new Date(currentYear, currentMonth + 1 , 0).getDate();
 
 
 
@@ -27,7 +26,7 @@ for (var i = 0; i < LastDay; i++) {
   }
 
 
-j= new Date(currentYear, currentMonth + 3, 0).getDate();
+j= new Date(currentYear, currentMonth , 0).getDate();
 index=7+FirstDay;
   for (var i = FirstDay; i > 0; i--) {
     elem= ".item"+ index;
@@ -47,3 +46,5 @@ index=LastDay+8+FirstDay;
       j++;
       index++;
     }
+
+
