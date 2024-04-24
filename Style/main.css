@@ -156,7 +156,7 @@ input[value="Search..."]{
 /* signup popup*/
 #sign_pop{
    
-    display: block;
+    display: none;
 }
 #sign_pop_content{
     height: 75%;
@@ -436,7 +436,6 @@ margin-top: 1vh;
     font-size: 25px;
 }
 .post_date{
-  
     margin-left: 1.2vh;
     font-size: 10px;
 }
