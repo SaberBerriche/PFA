@@ -129,3 +129,73 @@ $(document).on("click", function (event) {
   }
 });
 // end of :lel popup2 mta3 contact support
+
+// lel tabs mta3 el owner
+$("#tab1").on("click", function () {
+  $("#cpart1").css("display", "block");
+  $("#cpart2").css("display", "none");
+  $("#cpart3").css("display", "none");
+  $("#cpart4").css("display", "none");
+});
+
+$("#tab2").on("click", function () {
+  $("#cpart1").css("display", "none");
+  $("#cpart2").css("display", "block");
+  $("#cpart3").css("display", "none");
+  $("#cpart4").css("display", "none");
+});
+
+$("#tab3").on("click", function () {
+  $("#cpart1").css("display", "none");
+  $("#cpart2").css("display", "none");
+  $("#cpart3").css("display", "block");
+  $("#cpart4").css("display", "none");
+});
+
+$("#tab4").on("click", function () {
+  $("#cpart1").css("display", "none");
+  $("#cpart2").css("display", "none");
+  $("#cpart3").css("display", "none");
+  $("#cpart4").css("display", "block");
+});
+// end of lel tabs mta3 el owner
+
+// lel tabs mta3 el owner requests
+$("#r_tab1").on("click", function () {
+  $("#request1").css("display", "block");
+  $("#request2").css("display", "none");
+  $("#request3").css("display", "none");
+});
+
+$("#r_tab2").on("click", function () {
+  $("#request1").css("display", "none");
+  $("#request2").css("display", "block");
+  $("#request3").css("display", "none");
+});
+
+$("#r_tab3").on("click", function () {
+  $("#request1").css("display", "none");
+  $("#request2").css("display", "none");
+  $("#request3").css("display", "block");
+});
+// end of lel tabs mta3 el owner requests
+
+// lel tabs mta3 el owner requests (bch ybadel el focus)
+$("#r_tab1").on("click", function () {
+  $("#request_tab1").css("background-color", "#bebebe");
+  $("#request_tab2").css("background-color", "#204672");
+  $("#request_tab3").css("background-color", "#204672");
+});
+
+$("#r_tab2").on("click", function () {
+  $("#request_tab1").css("background-color", "##204672");
+  $("#request_tab2").css("background-color", "#bebebe");
+  $("#request_tab3").css("background-color", "#204672");
+});
+
+$("#r_tab3").on("click", function () {
+  $("#request_tab1").css("background-color", "#204672");
+  $("#request_tab2").css("background-color", "#204672");
+  $("#request_tab3").css("background-color", "#bebebe");
+});
+// end of // lel tabs mta3 el owner requests (bch ybadel el focus)
