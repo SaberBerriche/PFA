@@ -147,49 +147,61 @@
         </div>
       </div>
       <!-------------------------------------Posts Section-------------------------------------->
-      <div id="club-feed">
+      <div id="club_feed">
         <!-- Cover Photo -->
-        <div id="cover-photo">
+        <div id="cover_photo">
           <img src="media/dummy test images/IMG_4911.JPG" alt="cover Photo" />
         </div>
 
-        <div id="profile-photo">
+        <div id="profile_photo">
           <img src="media/dummy test images/IMG_4911.JPG" alt="Profile Photo" />
         </div>
 
-        <div id="name-number">
-          <p id="club-name" class="c-txt1">club name</p>
-          <p id="members-number" class="c-txt1">56 members</p>
+        <div id="name_number">
+          <p id="club_name" class="c_txt1">club name</p>
+          <p id="members_number" class="c_txt1">56 members</p>
         </div>
 
-        <div id="clubo-tabs">
-          <p class="c-txt2" id="tab1">Posts</p>
-          <p class="c-txt2" id="tab2">About us</p>
-          <p class="c-txt2" id="tab3">Manage events</p>
-          <p class="c-txt2" id="tab4">Manage requests</p>
+        <div id="clubo_tabs">
+          <p class="c_txt2" id="tab1">Posts</p>
+          <p class="c_txt2" id="tab2">About us</p>
+          <p class="c_txt2" id="tab3">Manage events</p>
+          <p class="c_txt2" id="tab4">Manage requests</p>
         </div>
       </div>
     </div>
 
     <!-----------------------------------------club tabs---------------------------------------->
-    <div id="cpart1">
-      <div id="cpart1-contain">
-        <div id="create-p">
-          <input
-            id="post-input"
-            type="text"
-            value="What lovely event is out there!"
-          />
-          <button id="post-butt">post</button>
-          <img id="post-photo" alt="" src="media/gallery-photo.svg" />
+    <div id="cpart1" class="cpart">
+      <div id="cpart1_contain">
+        <div id="create_p">
+          <textarea
+            id="post_input"
+            placeholder="Write your post here..."
+            maxlength="400"
+          ></textarea>
+          <div id="post_container2">
+            <div id="inserted_photos"></div>
+            <img id="post_photo" alt="" src="media/gallery-photo.svg" />
+            <input
+              type="file"
+              id="post_image_input"
+              style="display: none"
+              accept="image/*"
+              multiple="multiple"
+            />
+            <button id="post_butt">post</button>
+          </div>
         </div>
-
         <div class="cp_container">
           <div class="post_head">
             <img class="club_av" src="media/Default_avatar.svg" alt="" />
             <div class="head_text">
               <span class="c_name">Club Name</span> <br />
               <span class="post_date">DD/MM/YYYY</span>
+            </div>
+            <div class="delete_post">
+              <p>delete</p>
             </div>
           </div>
           <div class="post_content">
@@ -214,6 +226,9 @@
             <div class="head_text">
               <span class="c_name">Club Name</span> <br />
               <span class="post_date">DD/MM/YYYY</span>
+            </div>
+            <div class="delete_post">
+              <p>delete</p>
             </div>
           </div>
           <div class="post_content">
@@ -237,76 +252,77 @@
         </div>
       </div>
     </div>
-    <div id="cpart2">
-      <div id="cpart2-contain">
-        <div id="club-bio">
-          <p class="cbio-txt">we are robotech FSM</p>
+    <div id="cpart2" class="cpart">
+      <div id="cpart2_contain">
+        <div id="bio_container">
+          <button id="save_bio">save</button>
+          <textarea id="club_bio" maxlength="300">we are robotech FSM</textarea>
         </div>
-        <div id="members-list">
+        <div id="members_list">
           <p id="memberstxt">Members</p>
 
-          <div class="member-container">
+          <div class="member_container">
             <img
-              class="member-icon"
+              class="member_icon"
               src="media/dummy test images/IMG_4911.JPG"
               alt=""
             />
-            <p class="member-txt">Mouhamed aziz el ben yasmina<br />owner</p>
+            <p class="member_txt">Mouhamed aziz el ben yasmina<br />owner</p>
           </div>
 
-          <div class="member-container">
+          <div class="member_container">
             <img
-              class="member-icon"
+              class="member_icon"
               src="media/dummy test images/IMG_4911.JPG"
               alt=""
             />
-            <p class="member-txt">Mouhamed aziz el ben yasmina<br />owner</p>
+            <p class="member_txt">Mouhamed aziz el ben yasmina<br />owner</p>
           </div>
 
-          <div class="member-container">
+          <div class="member_container">
             <img
-              class="member-icon"
+              class="member_icon"
               src="media/dummy test images/IMG_4911.JPG"
               alt=""
             />
-            <p class="member-txt">Mouhamed aziz el ben yasmina<br />owner</p>
+            <p class="member_txt">Mouhamed aziz el ben yasmina<br />owner</p>
           </div>
 
-          <div class="member-container">
+          <div class="member_container">
             <img
-              class="member-icon"
+              class="member_icon"
               src="media/dummy test images/IMG_4911.JPG"
               alt=""
             />
-            <p class="member-txt">Mouhamed aziz el ben yasmina<br />owner</p>
+            <p class="member_txt">Mouhamed aziz el ben yasmina<br />owner</p>
           </div>
 
-          <div class="member-container">
+          <div class="member_container">
             <img
-              class="member-icon"
+              class="member_icon"
               src="media/dummy test images/IMG_4911.JPG"
               alt=""
             />
-            <p class="member-txt">Mouhamed aziz el ben yasmina<br />owner</p>
+            <p class="member_txt">Mouhamed aziz el ben yasmina<br />owner</p>
           </div>
 
-          <div class="member-container">
+          <div class="member_container">
             <img
-              class="member-icon"
+              class="member_icon"
               src="media/dummy test images/IMG_4911.JPG"
               alt=""
             />
-            <p class="member-txt">Mouhamed aziz el ben yasmina<br />owner</p>
+            <p class="member_txt">Mouhamed aziz el ben yasmina<br />owner</p>
           </div>
         </div>
       </div>
     </div>
-    <div id="cpart3">
-      <div id="cpart3-contain">
-        <div id="create-event">
+    <div id="cpart3" class="cpart">
+      <div id="cpart3_contain">
+        <div id="create_event">
           <p>Create event</p>
         </div>
-        <div class="event-container">
+        <div class="event_container">
           <div id="event_part1">
             <div class="event_name">
               <p class="event_name_txt">Event : event name</p>
@@ -329,7 +345,7 @@
             <p class="event_genre">Genres : peak/fiction/goat</p>
           </div>
         </div>
-        <div class="event-container">
+        <div class="event_container">
           <div id="event_part1">
             <div class="event_name">
               <p class="event_name_txt">Event : event name</p>
@@ -352,7 +368,7 @@
             <p class="event_genre">Genres : peak/fiction/goat</p>
           </div>
         </div>
-        <div class="event-container">
+        <div class="event_container">
           <div id="event_part1">
             <div class="event_name">
               <p class="event_name_txt">Event : event name</p>
@@ -377,7 +393,33 @@
         </div>
       </div>
     </div>
-    <div id="cpart4">
+    <div id="cpart3_2">
+      <div id="cpart3_2_container">
+        <div id="title_container">
+          <p>Title:</p>
+          <textarea id="event_title" maxlength="26"></textarea>
+        </div>
+        <div id="details_container">
+          <textarea
+            id="details"
+            placeholder="enter event details"
+            maxlength="300"
+          ></textarea>
+        </div>
+        <div id="genre_container">
+          <textarea
+            name="genre"
+            id="event_genre"
+            maxlength="40"
+            placeholder="enter events"
+          ></textarea>
+          <div id="post_event">
+            <p>post</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="cpart4" class="cpart">
       <div id="cpart4_contain">
         <div id="requests_tabs">
           <div id="request_tab1" class="request_tab">
@@ -392,7 +434,7 @@
         </div>
       </div>
 
-      <div id="request1">
+      <div id="request1" class="request">
         <div id="request1_container">
           <div class="member_request">
             <p class="member_name">Akrem Haddad</p>
@@ -441,9 +483,8 @@
           </div>
         </div>
       </div>
-
-      <div id="request2"></div>
-      <div id="request3"></div>
+      <div id="request2" class="request"></div>
+      <div id="request3" class="request"></div>
     </div>
 
     <script src="JavaScript/animations.js"></script>

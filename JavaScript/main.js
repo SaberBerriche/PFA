@@ -130,72 +130,75 @@ $(document).on("click", function (event) {
 });
 // end of :lel popup2 mta3 contact support
 
-// lel tabs mta3 el owner
-$("#tab1").on("click", function () {
-  $("#cpart1").css("display", "block");
-  $("#cpart2").css("display", "none");
-  $("#cpart3").css("display", "none");
-  $("#cpart4").css("display", "none");
-});
-
-$("#tab2").on("click", function () {
-  $("#cpart1").css("display", "none");
-  $("#cpart2").css("display", "block");
-  $("#cpart3").css("display", "none");
-  $("#cpart4").css("display", "none");
-});
-
-$("#tab3").on("click", function () {
-  $("#cpart1").css("display", "none");
-  $("#cpart2").css("display", "none");
-  $("#cpart3").css("display", "block");
-  $("#cpart4").css("display", "none");
-});
-
-$("#tab4").on("click", function () {
-  $("#cpart1").css("display", "none");
-  $("#cpart2").css("display", "none");
-  $("#cpart3").css("display", "none");
-  $("#cpart4").css("display", "block");
+// lel tabs mta3 el club owner (bruh kanet twila barcha ama gemini 3aweni)
+$(".c_txt2").on("click", function () {
+  const clickedId = $(this).attr("id").replace("tab", "cpart");
+  $(".cpart").css("display", "none");
+  $("#" + clickedId).css("display", "block");
+  $(".c_txt2").css("text-decoration", "none");
+  $(this).css("text-decoration", "underline");
 });
 // end of lel tabs mta3 el owner
 
 // lel tabs mta3 el owner requests
-$("#r_tab1").on("click", function () {
-  $("#request1").css("display", "block");
-  $("#request2").css("display", "none");
-  $("#request3").css("display", "none");
-});
-
-$("#r_tab2").on("click", function () {
-  $("#request1").css("display", "none");
-  $("#request2").css("display", "block");
-  $("#request3").css("display", "none");
-});
-
-$("#r_tab3").on("click", function () {
-  $("#request1").css("display", "none");
-  $("#request2").css("display", "none");
-  $("#request3").css("display", "block");
+$(".request_tab").on("click", function () {
+  const clickedId = $(this).attr("id").replace("request_tab", "request");
+  $(".request").css("display", "none");
+  $("#" + clickedId).css("display", "block");
 });
 // end of lel tabs mta3 el owner requests
 
 // lel tabs mta3 el owner requests (bch ybadel el focus)
-$("#r_tab1").on("click", function () {
-  $("#request_tab1").css("background-color", "#bebebe");
-  $("#request_tab2").css("background-color", "#204672");
-  $("#request_tab3").css("background-color", "#204672");
+$(".request_tab").on("click", function () {
+  $(".request_tab").css("background-color", "#204672"); // Reset all to default color
+  $(this).css("background-color", "#bebebe"); // Set clicked tab to highlighted color
+});
+// end of lel tabs mta3 el owner requests (bch ybadel el focus)
+
+// lel 9ars mta3 add photos to the post
+$("#post_photo").on("click", function () {
+  var fileInput = $("#post_image_input");
+  if (fileInput.length > 0) {
+    fileInput[0].click();
+  }
 });
 
-$("#r_tab2").on("click", function () {
-  $("#request_tab1").css("background-color", "##204672");
-  $("#request_tab2").css("background-color", "#bebebe");
-  $("#request_tab3").css("background-color", "#204672");
+$("#post_image_input").change(function () {
+  var files = this.files;
+  var insertedPhotos = $("#inserted_photos");
+
+  // Check if the maximum number of photos has been reached
+  if (insertedPhotos.children().length >= 4) {
+    alert("You can only add up to 4 photos.");
+    return;
+  }
+
+  for (var i = 0; i < files.length; i++) {
+    var file = files[i];
+    var reader = new FileReader();
+
+    reader.onload = function (e) {
+      // Create a new image element
+      var img = $("<img>");
+
+      // Set the source attribute of the image
+      img.attr("src", e.target.result);
+
+      // Append the image to the container
+      insertedPhotos.append(img);
+    };
+
+    reader.readAsDataURL(file);
+  }
+});
+// end of lel 9ars mta3 add photos to the post
+
+$("#create_event").click(function (event) {
+  event.preventDefault();
+  $("#cpart3_2").css("display", "block");
 });
 
-$("#r_tab3").on("click", function () {
-  $("#request_tab1").css("background-color", "#204672");
-  $("#request_tab2").css("background-color", "#204672");
-  $("#request_tab3").css("background-color", "#bebebe");
+$("#post_event").click(function (event) {
+  event.preventDefault();
+  $("#cpart3_2").css("display", "none");
 });
-// end of // lel tabs mta3 el owner requests (bch ybadel el focus)
