@@ -3,7 +3,7 @@ var leftvalue = $('#theme_button').width();
 var widthvalue= $('#light').width();
 var isLightVisible= true;
 
-console.log(leftvalue);
+
 leftvalue = leftvalue-widthvalue+1.6;
 
 

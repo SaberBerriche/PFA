@@ -94,6 +94,7 @@ $('#ava_contain').on('click', function() {
       event.preventDefault();
    $("#part2").css("display","block");
    $("#part1").css("display","none");
+   
     }
   });
 

@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Style/calendar_scratch.css">
+   
     <link rel="stylesheet" href="Style/main.css">
+    <link rel="stylesheet" href="Style/calendar_scratch.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="JavaScript/jquery-ui-1.13.2.custom/jquery-ui-1.13.2.custom/jquery-ui.js"></script>
     <title>calendar</title>
@@ -189,13 +190,19 @@
             <div id="event_container">
                 <h4> Event Number</h4>
                 <div id="event_container">
-                    <span> 24H Challenge</span>
-                    <span> Ruspina Marathon</span>
+                    <span class="events"> 24H Challenge</span>
+                    <span class="events"> Ruspina Marathon</span>
                 </div>
             </div>
         </div>
 
-        <div class="item  date"></div>
+        <div class="item  date">
+            <span></span>
+            <div id="arrow_contain">
+            <img src="media/arrow.svg" alt="" class="arrows" id="left_arrow">
+            <img src="media/arrow.svg" alt="" class="arrows" id="right_arrow">
+            </div>
+        </div>
        
         <div class="item item1 days">Sunday</div>
         <div class="item item2 days">Monday</div>
@@ -204,45 +211,47 @@
         <div class="item item5 days">Thursday</div>
         <div class="item item6 days">Friday</div>
         <div class="item item7 days">Saturday</div>
-        <div class="item item8 box_day">1</div>
-        <div class="item item9 box_day">2</div>
-        <div class="item item10 box_day">3</div>
-        <div class="item item11 box_day">4</div>
-        <div class="item item12 box_day">5</div>
-        <div class="item item13 box_day">6</div>
-        <div class="item item14 box_day">7</div>
-        <div class="item item15 box_day">8</div>
-        <div class="item item16 box_day">9</div>
-        <div class="item item17 box_day">10</div>
-        <div class="item item18 box_day">11</div>
-        <div class="item item19 box_day">12</div>
-        <div class="item item20 box_day">13</div>
-        <div class="item item21 box_day">14</div>
-        <div class="item item22 box_day">15</div>
-        <div class="item item23 box_day">16</div>
-        <div class="item item24 box_day">17</div>
-        <div class="item item25 box_day">18</div>
-        <div class="item item26 box_day">19</div>
-        <div class="item item27 box_day">20</div>
-        <div class="item item28 box_day">21</div>
-        <div class="item item29 box_day">22</div>
-        <div class="item item30 box_day">23</div>
-        <div class="item item31 box_day">24*</div>
-        <div class="item item32 box_day">25*</div>
-        <div class="item item33 box_day">26*</div>
-        <div class="item item34 box_day">27*</div>
-        <div class="item item35 box_day">28*</div>
-        <div class="item item36 box_day">29*</div>
-        <div class="item item37 box_day">30*</div>
-        <div class="item item38 box_day">31*</div>
-        <div class="item item39 box_day"></div>
-        <div class="item item40 box_day"></div>
-        <div class="item item41 box_day"></div>
-        <div class="item item42 box_day"></div>
+        <div class="item item8  box_day" id="L1">
+            
+        </div>
+        <div class="item item9  box_day" id="L2"></div>
+        <div class="item item10 box_day" id="L3"></div>
+        <div class="item item11 box_day" id="L4"></div>
+        <div class="item item12 box_day" id="L5"></div>
+        <div class="item item13 box_day" id="L6"></div>
+        <div class="item item14 box_day" id="L7"></div>
+        <div class="item item15 box_day"></div>
+        <div class="item item16 box_day"></div>
+        <div class="item item17 box_day"></div>
+        <div class="item item18 box_day"></div>
+        <div class="item item19 box_day"></div>
+        <div class="item item20 box_day"></div>
+        <div class="item item21 box_day"></div>
+        <div class="item item22 box_day"></div>
+        <div class="item item23 box_day"></div>
+        <div class="item item24 box_day"></div>
+        <div class="item item25 box_day"></div>
+        <div class="item item26 box_day"></div>
+        <div class="item item27 box_day"></div>
+        <div class="item item28 box_day"></div>
+        <div class="item item29 box_day"></div>
+        <div class="item item30 box_day"></div>
+        <div class="item item31 box_day"></div>
+        <div class="item item32 box_day"></div>
+        <div class="item item33 box_day"></div>
+        <div class="item item34 box_day"></div>
+        <div class="item item35 box_day"></div>
+        <div class="item item36 box_day" id="L14"></div>
+        <div class="item item37 box_day" id="L13"></div>
+        <div class="item item38 box_day" id="L12"></div>
+        <div class="item item39 box_day" id="L11"></div>
+        <div class="item item40 box_day" id="L10"></div>
+        <div class="item item41 box_day" id="L9"></div>
+        <div class="item item42 box_day" id="L8"></div>
     </div>
 
     <script src="JavaScript/animations.js"></script>
     <script src="JavaScript/main.js"></script>
-<script src="JavaScript/calendar_scratch.js"></script>
+    <script src="JavaScript/calendar_scratch.js"></script>
 </body>
 </html>

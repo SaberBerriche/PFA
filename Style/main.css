@@ -5,6 +5,7 @@ body{
 
 /*nav bar style*/
 #navbar{
+    z-index: 9999;
     position: fixed;
     width: 100vw;
     display: flex;
@@ -285,10 +286,10 @@ input[value="Search..."]{
 }
 
 #part1{
-    display: none;
+    display: block;
 }
 #part2{
-    display: block;
+    display: none;
 }
 
 #int_contain{
